@@ -24,6 +24,8 @@ Project based on PHP 7 and Laravel 8
 
 ### Run the project
 
+There are multple ways to run this project:
+
 #### Docker (via [Laravel Sail](https://laravel.com/docs/8.x/sail))
 
 1) `cd {project-dir}`
@@ -38,3 +40,6 @@ Project based on PHP 7 and Laravel 8
 
 You can follow Laravel docs --> [Deployment](https://laravel.com/docs/8.x/deployment)
 
+### Use it
+
+There is a Postman collection inside the root with the endpoints available with example requests in them. Play with it!
