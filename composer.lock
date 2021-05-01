@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1e9283842db5c226e020dd6763850ee",
+    "content-hash": "43392e16bcca558ae19360c2299264f0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -61,6 +61,72 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.0.3"
             },
             "time": "2021-03-11T06:42:03+00:00"
+        },
+        {
+            "name": "avto-dev/json-rpc-laravel",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avto-dev/json-rpc-laravel.git",
+                "reference": "973898ef5421a00b3fc20cac17b16b8e916750fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avto-dev/json-rpc-laravel/zipball/973898ef5421a00b3fc20cac17b16b8e916750fb",
+                "reference": "973898ef5421a00b3fc20cac17b16b8e916750fb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/http": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/routing": "~6.0 || ~7.0 || ~8.0",
+                "illuminate/support": "~6.0 || ~7.0 || ~8.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "laravel/laravel": "~6.0 || ~7.0 || ~8.0",
+                "mockery/mockery": "^1.4",
+                "phpstan/phpstan": "^0.12.36",
+                "phpunit/phpunit": "^8.5.4 || ^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AvtoDev\\JsonRpc\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "RpcRouter": "AvtoDev\\JsonRpc\\RpcRouter"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AvtoDev\\JsonRpc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Avto Develop",
+                    "homepage": "https://github.com/avto-dev"
+                }
+            ],
+            "description": "Json Rpc package",
+            "keywords": [
+                "json",
+                "laravel",
+                "rpc"
+            ],
+            "support": {
+                "issues": "https://github.com/avto-dev/json-rpc-laravel/issues",
+                "source": "https://github.com/avto-dev/json-rpc-laravel"
+            },
+            "time": "2021-04-07T07:27:57+00:00"
         },
         {
             "name": "brick/math",
@@ -4613,63 +4679,6 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
             },
             "time": "2020-07-13T06:12:54+00:00"
-        },
-        {
-            "name": "upgate/laravel-jsonrpc",
-            "version": "0.7.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/upgate/laravel-jsonrpc.git",
-                "reference": "35d73948ffa9a8d11ee9a09345e98f6e0f439687"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/upgate/laravel-jsonrpc/zipball/35d73948ffa9a8d11ee9a09345e98f6e0f439687",
-                "reference": "35d73948ffa9a8d11ee9a09345e98f6e0f439687",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/contracts": "^5.1 || ^6 || ^7 || ^8",
-                "illuminate/http": "^5.1 || ^6 || ^7 || ^8",
-                "illuminate/pipeline": "^5.1 || ^6 || ^7 || ^8",
-                "illuminate/support": "^5.1 || ^6 || ^7 || ^8",
-                "php": ">=7.2",
-                "psr/log": "^1.0"
-            },
-            "require-dev": {
-                "illuminate/container": "^5.1 || ^6 || ^7 || ^8",
-                "illuminate/translation": "^5.1 || ^6 || ^7 || ^8",
-                "illuminate/validation": "^5.1 || ^6 || ^7 || ^8",
-                "phpunit/phpunit": "~8.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Upgate\\LaravelJsonRpc\\ServiceProvider\\JsonRpcServerServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Upgate\\LaravelJsonRpc\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "description": "Laravel JSON-RPC 2.0 Server",
-            "keywords": [
-                "json-rpc",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/upgate/laravel-jsonrpc/issues",
-                "source": "https://github.com/upgate/laravel-jsonrpc/tree/0.7.3"
-            },
-            "time": "2020-11-03T16:38:01+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

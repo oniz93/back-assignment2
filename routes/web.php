@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use AvtoDev\JsonRpc\RpcRouter;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/rpc', 'AvtoDev\\JsonRpc\\Http\\Controllers\\RpcController');
+
+RpcRouter::on('SearchNearestPharmacy', 'App\\Http\\Controllers\\SearchController@getNearestPharmacy');
